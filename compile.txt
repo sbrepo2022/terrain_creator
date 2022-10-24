@@ -1,0 +1,3 @@
+g++ -c -m64 TerrainCreator.cpp d3dinit.cpp ClassObject.cpp ClassCamera.cpp WindowFrame.cpp SpecialFramework.cpp StrParse.cpp ImgPrint.cpp
+g++ -o TerrainCreator resource1.o TerrainCreator.o d3dinit.o ClassObject.o ClassCamera.o WindowFrame.o SpecialFramework.o StrParse.o ImgPrint.o -ld3d9 -ld3dx9 -mwindows -m64
+windres --target=pe-i386 resource1.rc -o resource1.o
